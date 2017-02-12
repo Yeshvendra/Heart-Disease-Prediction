@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.cross_validation import KFold
 from sklearn.ensemble import RandomForestClassifier
-heart = pandas.read_csv("processed_cleveland1.csv")
+heart = pandas.read_csv("pc.csv")
 print(heart.describe())
 heart.loc[heart["heartpred"]==2,"heartpred"]=1
 heart.loc[heart["heartpred"]==3,"heartpred"]=1
